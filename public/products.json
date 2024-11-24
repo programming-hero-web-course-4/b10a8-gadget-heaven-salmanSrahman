@@ -1,0 +1,902 @@
+[
+    {
+        "product_id": 1,
+        "product_title": "Dell Inspiron 15",
+        "product_image": "https://via.placeholder.com/300?text=Product+1",
+        "category": "Laptop",
+        "price": 100.0,
+        "description": "This is the description for Product 1.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": true,
+        "rating": 3.5
+    },
+    {
+        "product_id": 2,
+        "product_title": "MacBook Pro 16-inch",
+        "product_image": "https://via.placeholder.com/300?text=Product+2",
+        "category": "MacBook",
+        "price": 110.5,
+        "description": "This is the description for Product 2.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": false,
+        "rating": 3.6
+    },
+    {
+        "product_id": 3,
+        "product_title": "Samsung Galaxy S23",
+        "product_image": "https://via.placeholder.com/300?text=Product+3",
+        "category": "Phone",
+        "price": 121.0,
+        "description": "This is the description for Product 3.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": true,
+        "rating": 3.7
+    },
+    {
+        "product_id": 4,
+        "product_title": "iPhone 15",
+        "product_image": "https://via.placeholder.com/300?text=Product+4",
+        "category": "iPhone",
+        "price": 131.5,
+        "description": "This is the description for Product 4.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": false,
+        "rating": 3.8
+    },
+    {
+        "product_id": 5,
+        "product_title": "Apple Watch Series 8",
+        "product_image": "https://via.placeholder.com/300?text=Product+5",
+        "category": "Smart Watch",
+        "price": 142.0,
+        "description": "This is the description for Product 5.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": true,
+        "rating": 3.9
+    },
+    {
+        "product_id": 6,
+        "product_title": "Logitech MX Master 3S",
+        "product_image": "https://via.placeholder.com/300?text=Product+6",
+        "category": "Accessory",
+        "price": 152.5,
+        "description": "This is the description for Product 6.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": false,
+        "rating": 3.5
+    },
+    {
+        "product_id": 7,
+        "product_title": "Dell Inspiron 15",
+        "product_image": "https://via.placeholder.com/300?text=Product+7",
+        "category": "Laptop",
+        "price": 163.0,
+        "description": "This is the description for Product 7.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": true,
+        "rating": 3.6
+    },
+    {
+        "product_id": 8,
+        "product_title": "MacBook Air M2",
+        "product_image": "https://via.placeholder.com/300?text=Product+8",
+        "category": "MacBook",
+        "price": 173.5,
+        "description": "This is the description for Product 8.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": false,
+        "rating": 3.7
+    },
+    {
+        "product_id": 9,
+        "product_title": "Google Pixel 7 Pro",
+        "product_image": "https://via.placeholder.com/300?text=Product+9",
+        "category": "Phone",
+        "price": 184.0,
+        "description": "This is the description for Product 9.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": true,
+        "rating": 3.8
+    },
+    {
+        "product_id": 10,
+        "product_title": "iPhone 14 Pro Max",
+        "product_image": "https://via.placeholder.com/300?text=Product+10",
+        "category": "iPhone",
+        "price": 194.5,
+        "description": "This is the description for Product 10.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": false,
+        "rating": 3.9
+    },
+    {
+        "product_id": 11,
+        "product_title": "Apple Watch Series 8",
+        "product_image": "https://via.placeholder.com/300?text=Product+11",
+        "category": "Smart Watch",
+        "price": 205.0,
+        "description": "This is the description for Product 11.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": true,
+        "rating": 3.5
+    },
+    {
+        "product_id": 12,
+        "product_title": "SanDisk Extreme Portable SSD",
+        "product_image": "https://via.placeholder.com/300?text=Product+12",
+        "category": "Accessory",
+        "price": 215.5,
+        "description": "This is the description for Product 12.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": false,
+        "rating": 3.6
+    },
+    {
+        "product_id": 13,
+        "product_title": "Dell Inspiron 15",
+        "product_image": "https://via.placeholder.com/300?text=Product+13",
+        "category": "Laptop",
+        "price": 226.0,
+        "description": "This is the description for Product 13.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": true,
+        "rating": 3.7
+    },
+    {
+        "product_id": 14,
+        "product_title": "MacBook Pro 14-inch",
+        "product_image": "https://via.placeholder.com/300?text=Product+14",
+        "category": "MacBook",
+        "price": 236.5,
+        "description": "This is the description for Product 14.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": false,
+        "rating": 3.8
+    },
+    {
+        "product_id": 15,
+        "product_title": "Samsung Galaxy A54",
+        "product_image": "https://via.placeholder.com/300?text=Product+15",
+        "category": "Phone",
+        "price": 247.0,
+        "description": "This is the description for Product 15.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": true,
+        "rating": 3.9
+    },
+    {
+        "product_id": 16,
+        "product_title": "iPhone SE 3rd Gen",
+        "product_image": "https://via.placeholder.com/300?text=Product+16",
+        "category": "iPhone",
+        "price": 257.5,
+        "description": "This is the description for Product 16.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": false,
+        "rating": 3.5
+    },
+    {
+        "product_id": 17,
+        "product_title": "Fitbit Versa 4",
+        "product_image": "https://via.placeholder.com/300?text=Product+17",
+        "category": "Smart Watch",
+        "price": 268.0,
+        "description": "This is the description for Product 17.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": true,
+        "rating": 3.6
+    },
+    {
+        "product_id": 18,
+        "product_title": "Anker PowerCore 10000",
+        "product_image": "https://via.placeholder.com/300?text=Product+18",
+        "category": "Accessory",
+        "price": 278.5,
+        "description": "This is the description for Product 18.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": false,
+        "rating": 3.7
+    },
+    {
+        "product_id": 19,
+        "product_title": "HP Pavilion x360",
+        "product_image": "https://via.placeholder.com/300?text=Product+19",
+        "category": "Laptop",
+        "price": 289.0,
+        "description": "This is the description for Product 19.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": true,
+        "rating": 3.8
+    },
+    {
+        "product_id": 20,
+        "product_title": "MacBook Pro 14-inch",
+        "product_image": "https://via.placeholder.com/300?text=Product+20",
+        "category": "MacBook",
+        "price": 299.5,
+        "description": "This is the description for Product 20.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": false,
+        "rating": 3.9
+    },
+    {
+        "product_id": 21,
+        "product_title": "OnePlus 11",
+        "product_image": "https://via.placeholder.com/300?text=Product+21",
+        "category": "Phone",
+        "price": 310.0,
+        "description": "This is the description for Product 21.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": true,
+        "rating": 3.5
+    },
+    {
+        "product_id": 22,
+        "product_title": "iPhone 13 Mini",
+        "product_image": "https://via.placeholder.com/300?text=Product+22",
+        "category": "iPhone",
+        "price": 320.5,
+        "description": "This is the description for Product 22.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": false,
+        "rating": 3.6
+    },
+    {
+        "product_id": 23,
+        "product_title": "Fitbit Versa 4",
+        "product_image": "https://via.placeholder.com/300?text=Product+23",
+        "category": "Smart Watch",
+        "price": 331.0,
+        "description": "This is the description for Product 23.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": true,
+        "rating": 3.7
+    },
+    {
+        "product_id": 24,
+        "product_title": "SanDisk Extreme Portable SSD",
+        "product_image": "https://via.placeholder.com/300?text=Product+24",
+        "category": "Accessory",
+        "price": 341.5,
+        "description": "This is the description for Product 24.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": false,
+        "rating": 3.8
+    },
+    {
+        "product_id": 25,
+        "product_title": "Lenovo ThinkPad X1",
+        "product_image": "https://via.placeholder.com/300?text=Product+25",
+        "category": "Laptop",
+        "price": 352.0,
+        "description": "This is the description for Product 25.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": true,
+        "rating": 3.9
+    },
+    {
+        "product_id": 26,
+        "product_title": "MacBook Pro 14-inch",
+        "product_image": "https://via.placeholder.com/300?text=Product+26",
+        "category": "MacBook",
+        "price": 362.5,
+        "description": "This is the description for Product 26.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": false,
+        "rating": 3.5
+    },
+    {
+        "product_id": 27,
+        "product_title": "OnePlus 11",
+        "product_image": "https://via.placeholder.com/300?text=Product+27",
+        "category": "Phone",
+        "price": 373.0,
+        "description": "This is the description for Product 27.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": true,
+        "rating": 3.6
+    },
+    {
+        "product_id": 28,
+        "product_title": "iPhone SE 3rd Gen",
+        "product_image": "https://via.placeholder.com/300?text=Product+28",
+        "category": "iPhone",
+        "price": 383.5,
+        "description": "This is the description for Product 28.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": false,
+        "rating": 3.7
+    },
+    {
+        "product_id": 29,
+        "product_title": "Fitbit Versa 4",
+        "product_image": "https://via.placeholder.com/300?text=Product+29",
+        "category": "Smart Watch",
+        "price": 394.0,
+        "description": "This is the description for Product 29.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": true,
+        "rating": 3.8
+    },
+    {
+        "product_id": 30,
+        "product_title": "Belkin Wireless Charger",
+        "product_image": "https://via.placeholder.com/300?text=Product+30",
+        "category": "Accessory",
+        "price": 404.5,
+        "description": "This is the description for Product 30.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": false,
+        "rating": 3.9
+    },
+    {
+        "product_id": 31,
+        "product_title": "Dell Inspiron 15",
+        "product_image": "https://via.placeholder.com/300?text=Product+31",
+        "category": "Laptop",
+        "price": 415.0,
+        "description": "This is the description for Product 31.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": true,
+        "rating": 3.5
+    },
+    {
+        "product_id": 32,
+        "product_title": "MacBook Air M2",
+        "product_image": "https://via.placeholder.com/300?text=Product+32",
+        "category": "MacBook",
+        "price": 425.5,
+        "description": "This is the description for Product 32.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": false,
+        "rating": 3.6
+    },
+    {
+        "product_id": 33,
+        "product_title": "Samsung Galaxy S23",
+        "product_image": "https://via.placeholder.com/300?text=Product+33",
+        "category": "Phone",
+        "price": 436.0,
+        "description": "This is the description for Product 33.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": true,
+        "rating": 3.7
+    },
+    {
+        "product_id": 34,
+        "product_title": "iPhone 13 Mini",
+        "product_image": "https://via.placeholder.com/300?text=Product+34",
+        "category": "iPhone",
+        "price": 446.5,
+        "description": "This is the description for Product 34.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": false,
+        "rating": 3.8
+    },
+    {
+        "product_id": 35,
+        "product_title": "Samsung Galaxy Watch5",
+        "product_image": "https://via.placeholder.com/300?text=Product+35",
+        "category": "Smart Watch",
+        "price": 457.0,
+        "description": "This is the description for Product 35.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": true,
+        "rating": 3.9
+    },
+    {
+        "product_id": 36,
+        "product_title": "Sony WH-1000XM5 Headphones",
+        "product_image": "https://via.placeholder.com/300?text=Product+36",
+        "category": "Accessory",
+        "price": 467.5,
+        "description": "This is the description for Product 36.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": false,
+        "rating": 3.5
+    },
+    {
+        "product_id": 37,
+        "product_title": "Lenovo ThinkPad X1",
+        "product_image": "https://via.placeholder.com/300?text=Product+37",
+        "category": "Laptop",
+        "price": 478.0,
+        "description": "This is the description for Product 37.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": true,
+        "rating": 3.6
+    },
+    {
+        "product_id": 38,
+        "product_title": "MacBook Air M2",
+        "product_image": "https://via.placeholder.com/300?text=Product+38",
+        "category": "MacBook",
+        "price": 488.5,
+        "description": "This is the description for Product 38.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": false,
+        "rating": 3.7
+    },
+    {
+        "product_id": 39,
+        "product_title": "Samsung Galaxy S23",
+        "product_image": "https://via.placeholder.com/300?text=Product+39",
+        "category": "Phone",
+        "price": 499.0,
+        "description": "This is the description for Product 39.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": true,
+        "rating": 3.8
+    },
+    {
+        "product_id": 40,
+        "product_title": "iPhone SE 3rd Gen",
+        "product_image": "https://via.placeholder.com/300?text=Product+40",
+        "category": "iPhone",
+        "price": 509.5,
+        "description": "This is the description for Product 40.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": false,
+        "rating": 3.9
+    },
+    {
+        "product_id": 41,
+        "product_title": "Garmin Forerunner 965",
+        "product_image": "https://via.placeholder.com/300?text=Product+41",
+        "category": "Smart Watch",
+        "price": 520.0,
+        "description": "This is the description for Product 41.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": true,
+        "rating": 3.5
+    },
+    {
+        "product_id": 42,
+        "product_title": "Logitech MX Master 3S",
+        "product_image": "https://via.placeholder.com/300?text=Product+42",
+        "category": "Accessory",
+        "price": 530.5,
+        "description": "This is the description for Product 42.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": false,
+        "rating": 3.6
+    },
+    {
+        "product_id": 43,
+        "product_title": "Dell Inspiron 15",
+        "product_image": "https://via.placeholder.com/300?text=Product+43",
+        "category": "Laptop",
+        "price": 541.0,
+        "description": "This is the description for Product 43.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": true,
+        "rating": 3.7
+    },
+    {
+        "product_id": 44,
+        "product_title": "MacBook Air M1",
+        "product_image": "https://via.placeholder.com/300?text=Product+44",
+        "category": "MacBook",
+        "price": 551.5,
+        "description": "This is the description for Product 44.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": false,
+        "rating": 3.8
+    },
+    {
+        "product_id": 45,
+        "product_title": "Samsung Galaxy A54",
+        "product_image": "https://via.placeholder.com/300?text=Product+45",
+        "category": "Phone",
+        "price": 562.0,
+        "description": "This is the description for Product 45.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": true,
+        "rating": 3.9
+    },
+    {
+        "product_id": 46,
+        "product_title": "iPhone 15",
+        "product_image": "https://via.placeholder.com/300?text=Product+46",
+        "category": "iPhone",
+        "price": 572.5,
+        "description": "This is the description for Product 46.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": false,
+        "rating": 3.5
+    },
+    {
+        "product_id": 47,
+        "product_title": "Apple Watch Series 8",
+        "product_image": "https://via.placeholder.com/300?text=Product+47",
+        "category": "Smart Watch",
+        "price": 583.0,
+        "description": "This is the description for Product 47.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": true,
+        "rating": 3.6
+    },
+    {
+        "product_id": 48,
+        "product_title": "Anker PowerCore 10000",
+        "product_image": "https://via.placeholder.com/300?text=Product+48",
+        "category": "Accessory",
+        "price": 593.5,
+        "description": "This is the description for Product 48.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": false,
+        "rating": 3.7
+    },
+    {
+        "product_id": 49,
+        "product_title": "HP Pavilion x360",
+        "product_image": "https://via.placeholder.com/300?text=Product+49",
+        "category": "Laptop",
+        "price": 604.0,
+        "description": "This is the description for Product 49.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": true,
+        "rating": 3.8
+    },
+    {
+        "product_id": 50,
+        "product_title": "MacBook Air M2",
+        "product_image": "https://via.placeholder.com/300?text=Product+50",
+        "category": "MacBook",
+        "price": 614.5,
+        "description": "This is the description for Product 50.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": false,
+        "rating": 3.9
+    },
+    {
+        "product_id": 51,
+        "product_title": "OnePlus 11",
+        "product_image": "https://via.placeholder.com/300?text=Product+51",
+        "category": "Phone",
+        "price": 625.0,
+        "description": "This is the description for Product 51.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": true,
+        "rating": 3.5
+    },
+    {
+        "product_id": 52,
+        "product_title": "iPhone 13 Mini",
+        "product_image": "https://via.placeholder.com/300?text=Product+52",
+        "category": "iPhone",
+        "price": 635.5,
+        "description": "This is the description for Product 52.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": false,
+        "rating": 3.6
+    },
+    {
+        "product_id": 53,
+        "product_title": "Fitbit Versa 4",
+        "product_image": "https://via.placeholder.com/300?text=Product+53",
+        "category": "Smart Watch",
+        "price": 646.0,
+        "description": "This is the description for Product 53.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": true,
+        "rating": 3.7
+    },
+    {
+        "product_id": 54,
+        "product_title": "Anker PowerCore 10000",
+        "product_image": "https://via.placeholder.com/300?text=Product+54",
+        "category": "Accessory",
+        "price": 656.5,
+        "description": "This is the description for Product 54.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": false,
+        "rating": 3.8
+    },
+    {
+        "product_id": 55,
+        "product_title": "Dell Inspiron 15",
+        "product_image": "https://via.placeholder.com/300?text=Product+55",
+        "category": "Laptop",
+        "price": 667.0,
+        "description": "This is the description for Product 55.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": true,
+        "rating": 3.9
+    },
+    {
+        "product_id": 56,
+        "product_title": "MacBook Air M1",
+        "product_image": "https://via.placeholder.com/300?text=Product+56",
+        "category": "MacBook",
+        "price": 677.5,
+        "description": "This is the description for Product 56.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": false,
+        "rating": 3.5
+    },
+    {
+        "product_id": 57,
+        "product_title": "OnePlus 11",
+        "product_image": "https://via.placeholder.com/300?text=Product+57",
+        "category": "Phone",
+        "price": 688.0,
+        "description": "This is the description for Product 57.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": true,
+        "rating": 3.6
+    },
+    {
+        "product_id": 58,
+        "product_title": "iPhone 13 Mini",
+        "product_image": "https://via.placeholder.com/300?text=Product+58",
+        "category": "iPhone",
+        "price": 698.5,
+        "description": "This is the description for Product 58.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": false,
+        "rating": 3.7
+    },
+    {
+        "product_id": 59,
+        "product_title": "Garmin Forerunner 965",
+        "product_image": "https://via.placeholder.com/300?text=Product+59",
+        "category": "Smart Watch",
+        "price": 709.0,
+        "description": "This is the description for Product 59.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": true,
+        "rating": 3.8
+    },
+    {
+        "product_id": 60,
+        "product_title": "Logitech MX Master 3S",
+        "product_image": "https://via.placeholder.com/300?text=Product+60",
+        "category": "Accessory",
+        "price": 719.5,
+        "description": "This is the description for Product 60.",
+        "specification": [
+            "Spec 1",
+            "Spec 2",
+            "Spec 3"
+        ],
+        "availability": false,
+        "rating": 3.9
+    }
+]

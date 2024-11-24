@@ -6,6 +6,7 @@ export default {
       colors: {
         primary: "#9036DA",
         secondary: "#0B0B0B",
+        gray: "#F6F6F6"
       },
       fontFamily:{
         sora:["Sora"]
