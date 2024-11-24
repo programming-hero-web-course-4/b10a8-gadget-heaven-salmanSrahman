@@ -20,7 +20,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="bg-primary">
+    <div className="bg-primary/60">
       <Container>
         <div className="navbar text-base-100">
           <div className="navbar-start">
