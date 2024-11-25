@@ -6,6 +6,7 @@ import MainLayout from "./Components/MainLayout/MainLayout";
 import Home from "./Components/Home";
 import Statistics from "./Components/Statistics";
 import Dashboard from "./Components/Dashboard";
+import ProductDetails from "./Components/ProductDetails";
 
 let router = createBrowserRouter([
   {
@@ -19,6 +20,11 @@ let router = createBrowserRouter([
       {
         path: "/home",
         element: <Home />,
+      },
+      {
+        path: "product/:productId",
+        element: <ProductDetails />,
+        loader: () => fetch("/products.json"),
       },
       {
         path: "/statistics",
