@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import Container from "./Container";
 import { HiOutlineShoppingCart } from "react-icons/hi";
 import { FaRegHeart } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
+import { AddToCartContext } from "./ContextApi/AddToCartContextProvider";
 
 const Navbar = () => {
+  const { addToCartProduct } = useContext(AddToCartContext);
+
   const navList = (
     <>
       <li>
@@ -32,7 +35,7 @@ const Navbar = () => {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
+                  className="w-5 h-5"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -52,21 +55,21 @@ const Navbar = () => {
                 {navList}
               </ul>
             </div>
-            <a className="font-bold text-base-100 text-xl">Gadget Heaven</a>
+            <a className="text-xl font-bold text-base-100">Gadget Heaven</a>
           </div>
-          <div className="navbar-center hidden lg:flex">
-            <ul className="menu menu-horizontal px-1">{navList}</ul>
+          <div className="hidden navbar-center lg:flex">
+            <ul className="px-1 menu menu-horizontal">{navList}</ul>
           </div>
           <div className="navbar-end">
             <span className="w-[48px] h-[48px] leasing-[48px] bg-base-100 text-secondary rounded-full flex justify-center items-center mr-4 relative border border-solid border-secondary/10">
               <HiOutlineShoppingCart className="text-xl" />
-              <span className="absolute top-0 right-0 text-red-500 font-bold text-sm z-50 p-1">
-                10
+              <span className="absolute top-0 right-0 z-50 p-1 text-sm font-bold text-red-500">
+                {addToCartProduct.length}
               </span>
             </span>
             <span className="w-[48px] h-[48px] leasing-[48px] bg-base-100 text-secondary rounded-full flex justify-center items-center mr-4 relative border border-solid border-secondary/10">
               <FaRegHeart className="text-xl" />
-              <span className="absolute top-0 right-0 text-red-500 font-bold text-sm z-50 p-1">
+              <span className="absolute top-0 right-0 z-50 p-1 text-sm font-bold text-red-500">
                 10
               </span>
             </span>

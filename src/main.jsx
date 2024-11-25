@@ -7,6 +7,7 @@ import Home from "./Components/Home";
 import Statistics from "./Components/Statistics";
 import Dashboard from "./Components/Dashboard";
 import ProductDetails from "./Components/ProductDetails";
+import AddToCartContextProvider from "./Components/ContextApi/AddToCartContextProvider";
 
 let router = createBrowserRouter([
   {
@@ -39,5 +40,7 @@ let router = createBrowserRouter([
 ]);
 
 createRoot(document.getElementById("root")).render(
-  <RouterProvider router={router} />
+  <AddToCartContextProvider>
+    <RouterProvider router={router} />
+  </AddToCartContextProvider>
 );

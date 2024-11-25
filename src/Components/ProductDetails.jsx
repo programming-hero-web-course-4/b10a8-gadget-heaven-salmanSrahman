@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import banner from "../assets/banner.jpg";
 import { useLoaderData, useParams } from "react-router-dom";
 import Container from "./Container";
 import Rating from "react-rating";
 import { FaStar, FaStarHalfAlt } from "react-icons/fa";
 import { HiOutlineShoppingCart } from "react-icons/hi";
+import { AddToCartContext } from "./ContextApi/AddToCartContextProvider";
 
 const ProductDetails = () => {
   const loader = useLoaderData();
@@ -20,7 +21,11 @@ const ProductDetails = () => {
     availability,
     rating,
     specification,
+    product_id,
   } = product;
+
+  const { handleAddToCart } = useContext(AddToCartContext);
+  console.log(handleAddToCart);
 
   return (
     <div>
@@ -51,7 +56,10 @@ const ProductDetails = () => {
                 Specification:
               </h4>
               {specification.map((productInfo, index) => (
-                <h5 className="mb-3 text-lg list-decimal text-secondary/50">
+                <h5
+                  key={index}
+                  className="mb-3 text-lg list-decimal text-secondary/50"
+                >
                   {index + 1}: {productInfo}
                 </h5>
               ))}
@@ -72,7 +80,10 @@ const ProductDetails = () => {
               </span>
             </div>
             <div className="flex gap-x-2">
-              <button className="flex items-center px-6 py-3 font-medium text-white rounded-xl text-md bg-primary gap-x-2">
+              <button
+                className="flex items-center px-6 py-3 font-medium text-white rounded-xl text-md bg-primary gap-x-2"
+                onClick={() => handleAddToCart(product)}
+              >
                 <span>Add To Cart</span>
                 <HiOutlineShoppingCart className="text-xl" />
               </button>
