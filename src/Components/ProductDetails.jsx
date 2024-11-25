@@ -30,10 +30,10 @@ const ProductDetails = () => {
             <img src={banner} alt="" className="w-[424px] h-full rounded-3xl" />
           </div>
           <div>
-            <h1 className="text-xl font-semibold text-secondary mb-3">
+            <h1 className="mb-3 text-xl font-semibold text-secondary">
               {product_title}
             </h1>
-            <h3 className="text-lg font-semibold text-secondary/80 mb-3">
+            <h3 className="mb-3 text-lg font-semibold text-secondary/80">
               Price: ${price}
             </h3>
             <span
@@ -45,19 +45,19 @@ const ProductDetails = () => {
             >
               {availability === true ? "In Stock" : "Out of Stock"}
             </span>
-            <p className="text-lg  text-secondary/60 mb-3">{description}</p>
+            <p className="mb-3 text-lg text-secondary/60">{description}</p>
             <div>
-              <h4 className="text-xl font-semibold text-secondary mb-3">
+              <h4 className="mb-3 text-xl font-semibold text-secondary">
                 Specification:
               </h4>
-              {specification.map((productInfo) => (
-                <h5 className="list-decimal text-lg  text-secondary/50 mb-3">
-                  {productInfo}
+              {specification.map((productInfo, index) => (
+                <h5 className="mb-3 text-lg list-decimal text-secondary/50">
+                  {index + 1}: {productInfo}
                 </h5>
               ))}
             </div>
             <div>
-              <h4 className="text-xl font-semibold text-secondary mt-5 mb-1">
+              <h4 className="mt-5 mb-1 text-xl font-semibold text-secondary">
                 Rating:
               </h4>
               <Rating
@@ -67,19 +67,19 @@ const ProductDetails = () => {
                 fullSymbol={<FaStar />}
                 className="text-[#F9C004] mb-5 text-lg"
               />
-              <span className="ml-2.5 text-base text-secondary font-bold">
+              <span className="mb-1 ml-2.5 text-base text-secondary font-bold">
                 {rating}
               </span>
             </div>
             <div className="flex gap-x-2">
-              <button className="py-3 px-6 rounded-xl text-md font-medium bg-primary text-white flex items-center gap-x-2">
+              <button className="flex items-center px-6 py-3 font-medium text-white rounded-xl text-md bg-primary gap-x-2">
                 <span>Add To Cart</span>
                 <HiOutlineShoppingCart className="text-xl" />
               </button>
               <button className="btn btn-circle">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
+                  className="w-6 h-6"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"

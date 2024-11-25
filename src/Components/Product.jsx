@@ -6,19 +6,21 @@ const Product = ({ product }) => {
 
   return (
     <div>
-      <div className="rounded-xl p-5 bg-white">
+      <div className="p-5 bg-white rounded-xl">
         <div className="h-[181px] w-full rounded-xl">
           <img src={product_image} alt="" className="h-full rounded-xl" />
         </div>
         <h3 className="text-xl font-semibold text-secondary mt-5 mb-2.5">
           {product_title}
         </h3>
-        <h4 className="text-lg font-semibold text-secondary/60 mb-4">
+        <h4 className="mb-4 text-lg font-semibold text-secondary/60">
           Price: {price}
         </h4>
-        <button className="py-3 px-6 rounded-xl text-md font-medium text-primary ring-2 ring-primary ring-inset">
-          <Link to={`/product/${product_id}`}>View Details</Link>
-        </button>
+        <Link to={`/product/${product_id}`}>
+          <button className="px-6 py-3 font-medium rounded-xl text-md text-primary ring-2 ring-primary ring-inset">
+            View Details
+          </button>
+        </Link>
       </div>
     </div>
   );
