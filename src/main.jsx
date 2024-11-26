@@ -8,6 +8,9 @@ import Statistics from "./Components/Statistics";
 import Dashboard from "./Components/Dashboard";
 import ProductDetails from "./Components/ProductDetails";
 import AddToCartContextProvider from "./Components/ContextApi/AddToCartContextProvider";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import AddToWishListContextProvider from "./Components/ContextApi/AddToWishListContextProvider";
 
 let router = createBrowserRouter([
   {
@@ -34,6 +37,7 @@ let router = createBrowserRouter([
       {
         path: "/dashboard",
         element: <Dashboard />,
+        loader: () => fetch("/products.json"),
       },
     ],
   },
@@ -41,6 +45,9 @@ let router = createBrowserRouter([
 
 createRoot(document.getElementById("root")).render(
   <AddToCartContextProvider>
-    <RouterProvider router={router} />
+    <AddToWishListContextProvider>
+      <RouterProvider router={router} />
+      <ToastContainer />
+    </AddToWishListContextProvider>
   </AddToCartContextProvider>
 );

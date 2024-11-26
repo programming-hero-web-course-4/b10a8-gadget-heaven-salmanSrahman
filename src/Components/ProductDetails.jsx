@@ -6,14 +6,19 @@ import Rating from "react-rating";
 import { FaStar, FaStarHalfAlt } from "react-icons/fa";
 import { HiOutlineShoppingCart } from "react-icons/hi";
 import { AddToCartContext } from "./ContextApi/AddToCartContextProvider";
+import { AddToWishListContext } from "./ContextApi/AddToWishListContextProvider";
 
 const ProductDetails = () => {
   const loader = useLoaderData();
   const { productId } = useParams();
 
+  const { handleAddToCart } = useContext(AddToCartContext);
+  const { handleAddToWishList } = useContext(AddToWishListContext);
+
   const product = loader.find(
     (product) => product.product_id === parseInt(productId)
   );
+
   const {
     product_title,
     price,
@@ -23,9 +28,6 @@ const ProductDetails = () => {
     specification,
     product_id,
   } = product;
-
-  const { handleAddToCart } = useContext(AddToCartContext);
-  console.log(handleAddToCart);
 
   return (
     <div>
@@ -82,12 +84,15 @@ const ProductDetails = () => {
             <div className="flex gap-x-2">
               <button
                 className="flex items-center px-6 py-3 font-medium text-white rounded-xl text-md bg-primary gap-x-2"
-                onClick={() => handleAddToCart(product)}
+                onClick={() => handleAddToCart(product_id, availability)}
               >
                 <span>Add To Cart</span>
                 <HiOutlineShoppingCart className="text-xl" />
               </button>
-              <button className="btn btn-circle">
+              <button
+                className="btn btn-circle"
+                onClick={() => handleAddToWishList(product_id)}
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-6 h-6"
