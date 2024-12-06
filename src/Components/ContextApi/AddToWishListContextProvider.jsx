@@ -6,12 +6,25 @@ const AddToWishListContextProvider = ({ children }) => {
   const [addToWishListProdct, setAddToWishListProduct] = useState([]);
 
   const handleAddToWishList = (productId) => {
-    console.log(productId);
+    const addedWishProduct = addToWishListProdct.find(
+      (product_Id) => parseInt(product_Id) === parseInt(productId)
+    );
+
+    if (addedWishProduct) {
+      alert("Product added to wish list.");
+    } else {
+      const newWishListed = [...addToWishListProdct, productId];
+      setAddToWishListProduct(newWishListed);
+    }
   };
 
   return (
     <AddToWishListContext.Provider
-      value={{ handleAddToWishList, addToWishListProdct }}
+      value={{
+        handleAddToWishList,
+        setAddToWishListProduct,
+        addToWishListProdct,
+      }}
     >
       {children}
     </AddToWishListContext.Provider>

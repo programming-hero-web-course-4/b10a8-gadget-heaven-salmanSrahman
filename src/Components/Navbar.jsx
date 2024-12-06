@@ -2,11 +2,18 @@ import React, { useContext } from "react";
 import Container from "./Container";
 import { HiOutlineShoppingCart } from "react-icons/hi";
 import { FaRegHeart } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { AddToCartContext } from "./ContextApi/AddToCartContextProvider";
+import { AddToWishListContext } from "./ContextApi/AddToWishListContextProvider";
 
 const Navbar = () => {
   const { addToCartProduct } = useContext(AddToCartContext);
+
+  const { addToWishListProdct } = useContext(AddToWishListContext);
+
+  const location = useLocation();
+  console.log(location)
+
 
   const navList = (
     <>
@@ -70,7 +77,7 @@ const Navbar = () => {
             <span className="w-[48px] h-[48px] leasing-[48px] bg-base-100 text-secondary rounded-full flex justify-center items-center mr-4 relative border border-solid border-secondary/10">
               <FaRegHeart className="text-xl" />
               <span className="absolute top-0 right-0 z-50 p-1 text-sm font-bold text-red-500">
-                10
+                {addToWishListProdct.length}
               </span>
             </span>
           </div>

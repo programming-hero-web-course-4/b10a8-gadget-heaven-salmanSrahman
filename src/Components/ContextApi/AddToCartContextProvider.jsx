@@ -7,9 +7,8 @@ const AddToCartContextProvider = ({ children }) => {
   const [addToCartProduct, setAddToCartProduct] = useState([]);
 
   const handleAddToCart = (productId, availability) => {
-    console.log(availability);
     const existProduct = addToCartProduct.find(
-      (id) => parseInt(id) === productId
+      (id) => parseInt(id) === parseInt(productId)
     );
 
     if (existProduct) {
@@ -40,7 +39,9 @@ const AddToCartContextProvider = ({ children }) => {
     }
   };
   return (
-    <AddToCartContext.Provider value={{ addToCartProduct, handleAddToCart }}>
+    <AddToCartContext.Provider
+      value={{ addToCartProduct, setAddToCartProduct, handleAddToCart }}
+    >
       {children}
     </AddToCartContext.Provider>
   );

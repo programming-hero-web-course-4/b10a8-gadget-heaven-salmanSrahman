@@ -63,7 +63,7 @@
         "Display: 4K UHD touchscreen",
         "Weight: 1.3kg"
       ],
-      "availability": false,
+      "availability": true,
       "rating": 4.7
     },
     {
@@ -131,7 +131,7 @@
         "Camera: 50MP triple setup",
         "Battery life: 30 hours"
       ],
-      "availability": false,
+      "availability": true,
       "rating": 4.7
     },
     {
@@ -148,7 +148,7 @@
         "Camera: 50MP dual setup",
         "Display: 6.3 inch OLED"
       ],
-      "availability": false,
+      "availability": true,
       "rating": 4.5
     },
     {
@@ -198,7 +198,7 @@
           "Battery: 18 hours",
           "Water Resistance: 50 meters"
         ],
-        "availability": false,
+        "availability": true,
         "rating": 4.8
       },
       {
@@ -278,7 +278,7 @@
           "Storage: 512GB SSD",
           "Battery: 19 hours"
         ],
-        "availability": false,
+        "availability": true,
         "rating": 4.6
       },
       {
