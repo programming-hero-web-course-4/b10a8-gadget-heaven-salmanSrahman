@@ -12,25 +12,45 @@ const Navbar = () => {
   const { addToWishListProdct } = useContext(AddToWishListContext);
 
   const location = useLocation();
-  console.log(location)
-
+  console.log(location.pathname === "/");
 
   const navList = (
     <>
       <li>
-        <NavLink to="/">Home</NavLink>
+        <NavLink
+          to="/"
+          className={`${
+            location.pathname === "/" ? "text-gray" : "text-secondary"
+          } text-sm font-medium`}
+        >
+          Home
+        </NavLink>
       </li>
       <li>
-        <NavLink to="/statistics">Statistics</NavLink>
+        <NavLink
+          to="/statistics"
+          className={`${
+            location.pathname === "/" ? "text-gray" : "text-secondary"
+          } text-sm font-medium`}
+        >
+          Statistics
+        </NavLink>
       </li>
       <li>
-        <NavLink to="/dashboard">Dashboard</NavLink>
+        <NavLink
+          to="/dashboard"
+          className={`${
+            location.pathname === "/" ? "text-gray" : "text-secondary"
+          } text-sm font-medium`}
+        >
+          Dashboard
+        </NavLink>
       </li>
     </>
   );
 
   return (
-    <div className="bg-primary">
+    <div className={`${location.pathname === "/" ? "bg-primary" : "bg-white"}`}>
       <Container>
         <div className="navbar text-base-100">
           <div className="navbar-start">
@@ -43,7 +63,7 @@ const Navbar = () => {
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-5 h-5"
-                  fill="none"
+                  fill="none bg-red-600"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
                 >
@@ -57,12 +77,22 @@ const Navbar = () => {
               </div>
               <ul
                 tabIndex={0}
-                className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+                className={`${
+                  location.pathname === "/"
+                    ? "bg-base-100 !text-primary"
+                    : "bg-primary text-base-100"
+                } menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow`}
               >
                 {navList}
               </ul>
             </div>
-            <a className="text-xl font-bold text-base-100">Gadget Heaven</a>
+            <a
+              className={`${
+                location.pathname === "/" ? "text-base-100" : "text-secondary"
+              } text-xl font-bold`}
+            >
+              Gadget Heaven
+            </a>
           </div>
           <div className="hidden navbar-center lg:flex">
             <ul className="px-1 menu menu-horizontal">{navList}</ul>
