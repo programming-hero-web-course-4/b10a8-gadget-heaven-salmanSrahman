@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import Container from "./Container";
 import { HiOutlineShoppingCart } from "react-icons/hi";
 import { FaRegHeart } from "react-icons/fa";
-import { NavLink, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { AddToCartContext } from "./ContextApi/AddToCartContextProvider";
 import { AddToWishListContext } from "./ContextApi/AddToWishListContextProvider";
 
@@ -86,13 +86,14 @@ const Navbar = () => {
                 {navList}
               </ul>
             </div>
-            <a
+            <Link
+              to="/"
               className={`${
                 location.pathname === "/" ? "text-base-100" : "text-secondary"
               } text-xl font-bold`}
             >
               Gadget Heaven
-            </a>
+            </Link>
           </div>
           <div className="hidden navbar-center lg:flex">
             <ul className="px-1 menu menu-horizontal">{navList}</ul>

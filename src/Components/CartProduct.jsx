@@ -4,14 +4,16 @@ import { RxCross2 } from "react-icons/rx";
 import { GrSort } from "react-icons/gr";
 import { AddToCartContext } from "./ContextApi/AddToCartContextProvider";
 import success from "../assets/success.png";
+import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 const CartProduct = ({ products }) => {
   const { addToCartProduct, setAddToCartProduct } =
     useContext(AddToCartContext);
 
   const [cartProducts, setCartProducts] = useState([]);
-
   const [showModal, setShowModal] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const derivedCartProducts = addToCartProduct.map((id) =>
@@ -39,14 +41,35 @@ const CartProduct = ({ products }) => {
   );
 
   const handleSortedProduct = () => {
-    console.log(cartProducts);
     const sortedProduct = [...cartProducts].sort((a, b) => b.price - a.price);
     setCartProducts(sortedProduct);
   };
 
   const handlePurchase = () => {
-    setShowModal(true);
-    console.log("Purchase");
+    if (cartProducts.length > 0) {
+      setShowModal(true);
+
+      setTimeout(() => {
+        setCartProducts([]);
+        setAddToCartProduct([]);
+        setShowModal(false);
+      }, 2500);
+
+      setTimeout(() => {
+        navigate("/");
+      }, 2600);
+    } else {
+      toast.error("No Product added in cart.", {
+        position: "top-center",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
+    }
   };
   const handlePurchaseModalClose = () => {
     setShowModal(false);
@@ -70,6 +93,7 @@ const CartProduct = ({ products }) => {
                   Sort By Price <GrSort className="font-medium" />
                 </button>
               </div>
+
               <button
                 className="px-12 py-4 text-lg font-semibold text-white ring-2 ring-inset ring-primary rounded-3xl bg-primary"
                 onClick={handlePurchase}
@@ -121,20 +145,23 @@ const CartProduct = ({ products }) => {
           </div>
 
           {showModal && (
-            <div className="absolute top-0 left-0 flex items-center justify-center p-8 mx-auto text-center border border-solid rounded-md shadow bg-gray border-secondary/10">
-              <div className="flex items-center justify-center">
+            <div
+              className="absolute top-0 left-0 flex items-center justify-center w-full h-full bg-gray/80"
+              style={{ zIndex: 9999 }}
+            >
+              <div className="w-[600px] p-8 text-center bg-white border border-solid rounded-md shadow-md">
                 <div>
                   <img src={success} alt="" className="mx-auto" />
-                  <h1 className="my-6 text-2xl font-bold text-secondary ">
+                  <h1 className="my-6 text-2xl font-bold text-secondary">
                     Payment Successfully
                   </h1>
                   <h4 className="text-base font-medium text-secondary/60">
-                    Thanks for purchasing.{" "}
-                    <span className="block mt-2">Total:2449.96</span>
+                    Thanks for purchasing.
+                    <span className="block mt-2">Total: ${totalPrice}</span>
                   </h4>
                   <button
                     onClick={handlePurchaseModalClose}
-                    className="bg-[#110000]/10 p-2 w-full rounded-xl my-4 text-base font-medium text-secondary"
+                    className="w-full p-2 my-4 text-base font-medium rounded-xl bg-[#110000]/10 text-secondary"
                   >
                     Close
                   </button>
