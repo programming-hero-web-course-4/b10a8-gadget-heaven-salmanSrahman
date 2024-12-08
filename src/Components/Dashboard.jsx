@@ -3,6 +3,7 @@ import Container from "./Container";
 import WishListProduct from "./WishListProduct";
 import CartProduct from "./CartProduct";
 import { useLoaderData } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const Dashboard = () => {
   const [active, setActive] = useState("Cart");
@@ -15,6 +16,9 @@ const Dashboard = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>GadgetHeaven | Dasboard</title>
+      </Helmet>
       <div className="py-8 text-center bg-primary">
         <Container>
           <h1 className="mb-4 text-xl font-bold text-white md:text-3xl">

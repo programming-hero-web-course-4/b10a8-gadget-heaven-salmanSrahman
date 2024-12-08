@@ -7,8 +7,12 @@ const Product = ({ product }) => {
   return (
     <div>
       <div className="p-5 bg-white rounded-xl">
-        <div className="h-[181px] w-full rounded-xl">
-          <img src={product_image} alt="" className="h-full rounded-xl" />
+        <div className="h-[300px] w-full rounded-xl">
+          <img
+            src={product_image}
+            alt=""
+            className="w-full h-full rounded-xl"
+          />
         </div>
         <h3 className="text-xl font-semibold text-secondary mt-5 mb-2.5">
           {product_title}

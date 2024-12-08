@@ -1,8 +1,14 @@
+
+
+
+
+
+
 [
     {
       "product_id": 1,
       "product_title": "MacBook Air M2",
-      "product_image": "https://via.placeholder.com/300?text=Product+1",
+      "product_image": "https://i.ibb.co/LnxRXn1/macbook1.png",
       "category": "Laptop (Apple)",
       "price": 1199.99,
       "description": "Lightweight and powerful.",
@@ -18,7 +24,7 @@
     {
       "product_id": 2,
       "product_title": "MacBook Pro 14",
-      "product_image": "https://via.placeholder.com/300?text=Product+2",
+      "product_image": "https://i.ibb.co/hDcsGLn/macbook2.webp",
       "category": "Laptop (Apple)",
       "price": 1999.99,
       "description": "For professional users.",
@@ -35,7 +41,7 @@
     {
       "product_id": 3,
       "product_title": "Dell Inspiron 15",
-      "product_image": "https://via.placeholder.com/300?text=Product+3",
+      "product_image": "https://i.ibb.co/w6nLDDT/dell1.png",
       "category": "Laptop (Windows)",
       "price": 699.99,
       "description": "Affordable performance laptop.",
@@ -52,7 +58,7 @@
     {
       "product_id": 4,
       "product_title": "HP Spectre x360",
-      "product_image": "https://via.placeholder.com/300?text=Product+4",
+      "product_image": "https://i.ibb.co/CJVrsfd/hp1.png",
       "category": "Laptop (Windows)",
       "price": 1499.99,
       "description": "2-in-1 laptop for productivity.",
@@ -69,7 +75,7 @@
     {
       "product_id": 5,
       "product_title": "Asus ROG Strix",
-      "product_image": "https://via.placeholder.com/300?text=Product+5",
+      "product_image": "https://i.ibb.co/3cgdprp/asus1.png",
       "category": "Laptop (Windows)",
       "price": 1799.99,
       "description": "Gaming laptop with high FPS.",
@@ -86,7 +92,7 @@
     {
       "product_id": 6,
       "product_title": "Samsung Galaxy S23",
-      "product_image": "https://via.placeholder.com/300?text=Product+6",
+      "product_image": "https://i.ibb.co/HdZ4LyG/ph1.png",
       "category": "Phones",
       "price": 899.99,
       "description": "Flagship Android phone.",
@@ -100,10 +106,11 @@
       "availability": false,
       "rating": 4.6
     },
+  
     {
       "product_id": 7,
       "product_title": "iPhone 14 Pro Max",
-      "product_image": "https://via.placeholder.com/300?text=Product+7",
+      "product_image": "https://i.ibb.co/KmMM8LB/ph2.webp",
       "category": "Phones",
       "price": 1099.99,
       "description": "The ultimate Apple phone.",
@@ -117,10 +124,11 @@
       "availability": true,
       "rating": 4.9
     },
+  
     {
       "product_id": 8,
       "product_title": "OnePlus 11",
-      "product_image": "https://via.placeholder.com/300?text=Product+8",
+      "product_image": "https://i.ibb.co/2nfkzv0/ph3.png",
       "category": "Phones",
       "price": 699.99,
       "description": "Fast and smooth experience.",
@@ -137,7 +145,7 @@
     {
       "product_id": 9,
       "product_title": "Google Pixel 7",
-      "product_image": "https://via.placeholder.com/300?text=Product+9",
+      "product_image": "https://i.ibb.co/RSbMzdz/ph4.png",
       "category": "Phones",
       "price": 599.99,
       "description": "Excellent camera performance.",
@@ -154,7 +162,7 @@
     {
       "product_id": 10,
       "product_title": "Anker PowerCore",
-      "product_image": "https://via.placeholder.com/300?text=Product+10",
+      "product_image": "https://i.ibb.co/hywGzXc/power2.webp",
       "category": "Accessory",
       "price": 49.99,
       "description": "Portable power bank.",
@@ -167,10 +175,11 @@
       "availability": true,
       "rating": 4.8
     },
+  
     {
         "product_id": 11,
         "product_title": "Dell XPS 13 Plus",
-        "product_image": "https://via.placeholder.com/300?text=Product+11",
+        "product_image": "https://i.ibb.co/nnyGVCq/dell2.png",
         "category": "Laptop (Windows)",
         "price": 1349.99,
         "description": "Compact and sleek ultrabook.",
@@ -188,7 +197,7 @@
     {
         "product_id": 12,
         "product_title": "Apple Watch Series 8",
-        "product_image": "https://via.placeholder.com/300?text=Product+12",
+        "product_image": "https://i.ibb.co/7175rxq/watch.webp",
         "category": "Smart Watches",
         "price": 399.99,
         "description": "Advanced health monitoring features.",
@@ -201,10 +210,11 @@
         "availability": true,
         "rating": 4.8
       },
+      
       {
         "product_id": 13,
         "product_title": "Samsung Galaxy Watch 5",
-        "product_image": "https://via.placeholder.com/300?text=Product+13",
+        "product_image": "https://i.ibb.co/XF1zrK0/watch2.jpg",
         "category": "Smart Watches",
         "price": 279.99,
         "description": "Perfect for fitness enthusiasts.",
@@ -220,7 +230,7 @@
       {
         "product_id": 14,
         "product_title": "Logitech MX Master 3S",
-        "product_image": "https://via.placeholder.com/300?text=Product+14",
+        "product_image": "https://i.ibb.co/JrBFy31/mouse.jpg",
         "category": "Accessory",
         "price": 99.99,
         "description": "Advanced ergonomic mouse.",
@@ -233,42 +243,11 @@
         "availability": true,
         "rating": 4.9
       },
-      {
-        "product_id": 15,
-        "product_title": "iPad Pro 12.9",
-        "product_image": "https://via.placeholder.com/300?text=Product+15",
-        "category": "Accessory",
-        "price": 1099.99,
-        "description": "Ultimate productivity tablet.",
-        "specification": [
-          "Processor: M2",
-          "Display: Liquid Retina XDR",
-          "Storage: 128GB",
-          "Features: Face ID, Magic Keyboard compatible"
-        ],
-        "availability": true,
-        "rating": 4.8
-      },
-      {
-        "product_id": 16,
-        "product_title": "AirPods Pro 2",
-        "product_image": "https://via.placeholder.com/300?text=Product+16",
-        "category": "Accessory",
-        "price": 249.99,
-        "description": "Immersive sound experience.",
-        "specification": [
-          "Noise Cancellation: Yes",
-          "Battery Life: 6 hours (buds)",
-          "Charging Case: MagSafe",
-          "Water Resistance: IPX4"
-        ],
-        "availability": true,
-        "rating": 4.7
-      },
+      
       {
         "product_id": 17,
         "product_title": "Microsoft Surface Laptop 5",
-        "product_image": "https://via.placeholder.com/300?text=Product+17",
+        "product_image": "https://i.ibb.co/mqK4103/microsoft1.png",
         "category": "Laptop (Windows)",
         "price": 1299.99,
         "description": "Slim and elegant performance.",
@@ -281,26 +260,11 @@
         "availability": true,
         "rating": 4.6
       },
-      {
-        "product_id": 18,
-        "product_title": "Sony WH-1000XM5",
-        "product_image": "https://via.placeholder.com/300?text=Product+18",
-        "category": "Accessory",
-        "price": 399.99,
-        "description": "Premium noise-canceling headphones.",
-        "specification": [
-          "Battery Life: 30 hours",
-          "Connectivity: Bluetooth",
-          "Microphones: 4",
-          "Weight: 254g"
-        ],
-        "availability": true,
-        "rating": 4.9
-      },
+      
       {
         "product_id": 19,
         "product_title": "Lenovo ThinkPad X1",
-        "product_image": "https://via.placeholder.com/300?text=Product+19",
+        "product_image": "https://i.ibb.co/48hNS4q/lenevo1.png",
         "category": "Laptop (Windows)",
         "price": 1699.99,
         "description": "Durable and efficient for professionals.",
@@ -313,38 +277,6 @@
         ],
         "availability": true,
         "rating": 4.7
-      },
-      {
-        "product_id": 20,
-        "product_title": "Google Pixel Watch",
-        "product_image": "https://via.placeholder.com/300?text=Product+20",
-        "category": "Smart Watches",
-        "price": 349.99,
-        "description": "Elegant and functional smartwatch.",
-        "specification": [
-          "Display: AMOLED",
-          "Battery: 24 hours",
-          "Features: Fitbit integration",
-          "Water Resistance: 50m"
-        ],
-        "availability": true,
-        "rating": 4.5
-      },
-      {
-        "product_id": 21,
-        "product_title": "JBL Flip 6",
-        "product_image": "https://via.placeholder.com/300?text=Product+21",
-        "category": "Accessory",
-        "price": 129.99,
-        "description": "Portable Bluetooth speaker.",
-        "specification": [
-          "Battery Life: 12 hours",
-          "Waterproof: IP67",
-          "Connectivity: Bluetooth 5.1",
-          "Output: 20W"
-        ],
-        "availability": true,
-        "rating": 4.8
       }
   ]
   

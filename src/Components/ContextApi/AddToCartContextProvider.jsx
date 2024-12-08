@@ -36,6 +36,16 @@ const AddToCartContextProvider = ({ children }) => {
     } else {
       const newAddedProduct = [...addToCartProduct, productId];
       setAddToCartProduct(newAddedProduct);
+      toast.success("Product is added to cart.", {
+        position: "top-center",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
     }
   };
   return (

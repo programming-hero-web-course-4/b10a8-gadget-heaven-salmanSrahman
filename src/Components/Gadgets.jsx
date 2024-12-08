@@ -4,7 +4,7 @@ import Container from "./Container";
 
 const Gadgets = () => {
   return (
-    <div className="bg-gray py-20">
+    <div className="bg-gray pt-[380px] pb-20">
       <Container>
         <div>
           <h1 className="text-[40px] font-bold text-secondary text-center mb-12">

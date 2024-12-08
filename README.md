@@ -1,8 +1,55 @@
-# React + Vite
+# GadgetHeaven✨ - README
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Live Website
+[View Live Website](#)
 
-Currently, two official plugins are available:
+## Project Requirements
+[Requirement Document](#)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
+
+## Key React Concepts
+- **Components**: Modular and reusable UI elements.
+- **React Router**: Seamless navigation across pages (Home, Dashboard, Details).
+- **Context API**: Efficient state management for cart and wishlist.
+- **React Hooks**: Used `useState`, `useEffect`, `useContext`, and `useNavigate` for dynamic interactivity.
+- **React Toastify**: Instant feedback with notifications.
+
+---
+
+## Data Management
+- **State Handling**: Managed via Context API.
+- **Data Persistence**: Cart and Wishlist saved using LocalStorage.
+
+---
+
+## Key Features
+
+1. **User-Friendly Navigation**
+   - Highlighted active routes in the Navbar.
+   - Sidebar for category-based product filtering.
+
+2. **Product Details**
+   - Display product image, name, price, specifications, availability, and ratings.
+   - Add to Cart and Wishlist buttons with disabled state after action.
+
+3. **Dashboard**
+   - Tabs for Cart and Wishlist.
+   - "Sort by Price" in Cart (descending order).
+
+4. **Notifications & Feedback**
+   - Toast messages for Cart and Wishlist updates.
+   - Modal confirmation on successful purchase.
+
+5. **Additional Enhancements**
+   - Dynamic page titles and favicon.
+   - Custom background colors based on pages.
+   - Price vs. Product chart on the "Stats" page.
+   - Robust error handling with a 404 page.
+
+---
+
+## Notes
+- **Cart Limit**: Maximum total value capped at $1000.
+- **Wishlist Integration**: Items can be moved to Cart if within the limit.
+- Navbar and Footer consistently appear across all pages.

@@ -1,14 +1,17 @@
 import React from "react";
 import Container from "./Container";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <div>
       <Container>
-        <footer className="py-8 mt-5 bg-white md:mt-8">
+        <footer className="py-8 mt-8 bg-white md:mt-8">
           <div className="container px-4 mx-auto">
             <div className="text-center">
-              <h1 className="text-xl font-bold text-gray-800">Gadget Heaven</h1>
+              <h1 className="text-xl font-bold text-gray-800">
+                <Link to="/">Gadget Heaven</Link>
+              </h1>
               <p className="mt-2 text-sm text-gray-600">
                 Leading the way in cutting-edge technology and innovation.
               </p>

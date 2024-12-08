@@ -48,16 +48,6 @@ const CartProduct = ({ products }) => {
   const handlePurchase = () => {
     if (cartProducts.length > 0) {
       setShowModal(true);
-
-      setTimeout(() => {
-        setCartProducts([]);
-        setAddToCartProduct([]);
-        setShowModal(false);
-      }, 2500);
-
-      setTimeout(() => {
-        navigate("/");
-      }, 2600);
     } else {
       toast.error("No Product added in cart.", {
         position: "top-center",
@@ -72,7 +62,15 @@ const CartProduct = ({ products }) => {
     }
   };
   const handlePurchaseModalClose = () => {
-    setShowModal(false);
+    setTimeout(() => {
+      setShowModal(false);
+      setCartProducts([]);
+      setAddToCartProduct([]);
+    }, 1000);
+
+    setTimeout(() => {
+      navigate("/");
+    }, 1500);
   };
 
   return (

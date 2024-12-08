@@ -11,6 +11,7 @@ import AddToCartContextProvider from "./Components/ContextApi/AddToCartContextPr
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import AddToWishListContextProvider from "./Components/ContextApi/AddToWishListContextProvider";
+import { HelmetProvider } from "react-helmet-async";
 
 let router = createBrowserRouter([
   {
@@ -39,15 +40,21 @@ let router = createBrowserRouter([
         element: <Dashboard />,
         loader: () => fetch("/products.json"),
       },
+      {
+        path: "*",
+        element: <Dashboard />,
+      },
     ],
   },
 ]);
 
 createRoot(document.getElementById("root")).render(
-  <AddToCartContextProvider>
-    <AddToWishListContextProvider>
-      <RouterProvider router={router} />
-      <ToastContainer />
-    </AddToWishListContextProvider>
-  </AddToCartContextProvider>
+  <HelmetProvider>
+    <AddToCartContextProvider>
+      <AddToWishListContextProvider>
+        <RouterProvider router={router} />
+        <ToastContainer />
+      </AddToWishListContextProvider>
+    </AddToCartContextProvider>
+  </HelmetProvider>
 );
