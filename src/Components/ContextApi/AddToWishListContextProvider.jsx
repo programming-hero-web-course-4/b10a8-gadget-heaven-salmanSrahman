@@ -12,8 +12,8 @@ const AddToWishListContextProvider = ({ children }) => {
     );
 
     if (addedWishProduct) {
-      toast.error("Product added to wish list.", {
-        position: "top-right",
+      toast.error("Product already in wish list.", {
+        position: "top-center",
         autoClose: 2000,
         hideProgressBar: false,
         closeOnClick: true,
@@ -25,7 +25,7 @@ const AddToWishListContextProvider = ({ children }) => {
     } else {
       const newWishListed = [...addToWishListProdct, productId];
       setAddToWishListProduct(newWishListed);
-      toast.success("Product is added wish list.", {
+      toast.success("Product is added to wish list.", {
         position: "top-center",
         autoClose: 2000,
         hideProgressBar: false,

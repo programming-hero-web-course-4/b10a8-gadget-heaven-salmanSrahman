@@ -12,6 +12,8 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import AddToWishListContextProvider from "./Components/ContextApi/AddToWishListContextProvider";
 import { HelmetProvider } from "react-helmet-async";
+import NotFound from "./Components/NotFound";
+import Contact from "./Components/Contact";
 
 let router = createBrowserRouter([
   {
@@ -41,8 +43,12 @@ let router = createBrowserRouter([
         loader: () => fetch("/products.json"),
       },
       {
+        path: "/contact",
+        element: <Contact />,
+      },
+      {
         path: "*",
-        element: <Dashboard />,
+        element: <NotFound />,
       },
     ],
   },

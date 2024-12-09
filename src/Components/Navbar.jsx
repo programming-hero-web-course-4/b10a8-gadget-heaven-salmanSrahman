@@ -46,6 +46,16 @@ const Navbar = () => {
           Dashboard
         </NavLink>
       </li>
+      <li>
+        <NavLink
+          to="/contact"
+          className={`${
+            location.pathname === "/" ? "text-gray" : "text-secondary"
+          } text-sm font-medium`}
+        >
+          Contact Us
+        </NavLink>
+      </li>
     </>
   );
 
