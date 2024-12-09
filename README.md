@@ -4,7 +4,8 @@
 [View Live Website](#)
 
 ## Project Requirements
-[Requirement Document](#)
+[Requirement Document](https://github.com/programming-hero-web-course-4/b10a8-gadget-heaven-Raiyan27/blob/main/REQUIREMENTS.pdf)
+
 
 ---
 
@@ -12,14 +13,14 @@
 - **Components**: Modular and reusable UI elements.
 - **React Router**: Seamless navigation across pages (Home, Dashboard, Details).
 - **Context API**: Efficient state management for cart and wishlist.
-- **React Hooks**: Used `useState`, `useEffect`, `useContext`, and `useNavigate` for dynamic interactivity.
+- **React Hooks**: Used `useState`, `useEffect`, `useLocation`, `useContext`, `useLoaderData` and `useNavigate` for dynamic interactivity.
 - **React Toastify**: Instant feedback with notifications.
+- **React Helmet**: For dynamic page title & url.
 
 ---
 
 ## Data Management
 - **State Handling**: Managed via Context API.
-- **Data Persistence**: Cart and Wishlist saved using LocalStorage.
 
 ---
 
@@ -46,10 +47,3 @@
    - Custom background colors based on pages.
    - Price vs. Product chart on the "Stats" page.
    - Robust error handling with a 404 page.
-
----
-
-## Notes
-- **Cart Limit**: Maximum total value capped at $1000.
-- **Wishlist Integration**: Items can be moved to Cart if within the limit.
-- Navbar and Footer consistently appear across all pages.

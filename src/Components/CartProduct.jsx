@@ -155,7 +155,9 @@ const CartProduct = ({ products }) => {
                   </h1>
                   <h4 className="text-base font-medium text-secondary/60">
                     Thanks for purchasing.
-                    <span className="block mt-2">Total: ${totalPrice}</span>
+                    <span className="block mt-2">
+                      Total: ${totalPrice.toFixed(2)}
+                    </span>
                   </h4>
                   <button
                     onClick={handlePurchaseModalClose}

@@ -8,7 +8,6 @@ import {
   CartesianGrid,
   Tooltip,
   Legend,
-  ResponsiveContainer,
   BarChart,
 } from "recharts";
 
@@ -29,28 +28,27 @@ const Statistics = () => {
         <Helmet>
           <title>GadgetHeaven | Statistics</title>
         </Helmet>
-        <h1 className="text-4xl text-red-600">Statistics</h1>
-        <ResponsiveContainer width="100%" height="100%">
-          <BarChart
-            width={500}
-            height={300}
-            data={products}
-            margin={{
-              top: 5,
-              right: 30,
-              left: 20,
-              bottom: 5,
-            }}
-          >
-            <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey={products.product_title} />
-            <YAxis />
-            <Tooltip />
-            <Legend />
-            <Bar dataKey="pv" fill="#8884d8" background={{ fill: "#eee" }} />
-            <Bar dataKey="uv" fill="#82ca9d" />
-          </BarChart>
-        </ResponsiveContainer>
+        <h1 className="mb-10 text-2xl font-bold text-secondary">Statistics</h1>
+        <BarChart
+          width={1200}
+          height={400}
+          data={products}
+          margin={{
+            top: 5,
+            right: 30,
+            left: 20,
+            bottom: 5,
+          }}
+        >
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="product_title" />
+          <YAxis />
+          <Tooltip />
+          <Legend />
+          <Bar dataKey="price" fill="#8884d8" name="Price (USD)" />
+
+          <Bar dataKey="rating" fill="#82ca9d" name="Rating (out of 5)" />
+        </BarChart>
       </Container>
     </div>
   );
